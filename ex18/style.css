@@ -1,0 +1,22 @@
+@charset "UTF8";
+
+body {
+    background-color: rgb(94, 214, 214);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #228b22;
+}
+
+h1#principal {
+    text-align: center;
+    background-color: aquamarine;
+    font-style: italic;
+    text-decoration: underline;
+    color: #228b22;
+}
+
+h2 {
+    color: #228b22;
+}
