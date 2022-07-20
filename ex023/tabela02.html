@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas grandes</title>
+    <style>
+        h1 {
+            width: 520px;
+            background-color: grey;
+            box-shadow: 5px;
+            border: 2px solid black;
+            border-radius: 10px;
+            text-align: center;
+            
+        }
+        caption {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            font-weight: bold;
+            width: 500px;
+            background-color: grey;
+            border: 2px solid black;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 5px;
+        }
+        
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        table {
+            width: 500px;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 2px solid black;
+            padding: 5px;
+        }
+        thead,tfoot {
+            background-color: gray;
+            text-decoration: underline;
+            color: black;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+             
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    
+    <table>
+        <caption>População das Unidades Federativas </caption>
+        <thead>
+            <tr>
+                <th scope="col">ESTADO</th>
+                <th scope="col" style="width: 50px;">POPULAÇÃO</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+                
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.264.943</td>
+            </tr>
+            <TR>
+                <TD>Bahia</TD>
+                <td>14.876.064</td>
+            </TR>
+            <tr>
+                <td>Paraná</td>
+                <td>11.433.957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>11.377.239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>9.557.071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>9.132.078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td>8.602.865</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>7.164.788</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td>7.075.181</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td>7.018.354</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td>4.144.597</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td>4.018.650</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td>4.018.125</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td>3.506.853</td>
+            </tr>
+
+            <tr>
+                <td>Mato Grosso</td>
+                <td>3.484.466</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td>3.337.357</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td>3.273.227</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">total de habitantes</th>
+                <td><strong>210.147.125</strong></td>
+                
+            </tr>
+
+        </tfoot>
+    </table>
+    <footer> 
+        <p>O valor total de habitantes é uma valor simbólico</p>
+    </footer>
+    
+</body>
+</html>
