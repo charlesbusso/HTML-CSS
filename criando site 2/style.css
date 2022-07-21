@@ -1,10 +1,10 @@
 @charset "UTF8";
 
 :root {
-    --cor06: #888276;
+    --cor06: #8882767c;
     --cor07: #B6BF6F;
     --cor08: #F28B0C;
-    --cor09: #3E465B;
+    --cor09: #64729473;
     --cor10: #F2780C;
 
     --fonte-padrao: arial,verdana, helvetica,sans-serif;
@@ -59,13 +59,15 @@ header > h1 {
 }
 header p {
     background-color: var(--cor07);
+    padding-bottom: 20px;
     font-size: 2em;
     font-weight: normal;
     text-decoration: underline;
 }
 nav {
     background-color: var(--cor07);
-    padding-top: 10p;
+    padding-top: 20p;
+    padding-bottom: 20px;
     box-shadow: 2px 2px 0px black;
     text-align: left;
     border-radius: 10px 0px;
@@ -91,8 +93,9 @@ main {
 main h1 {
     background-color: var(--cor07);
     font-family: var(--fonte-padrao);
-    border-radius: 1px;
-    margin-top: 0px;
+    padding-top: 20px;
+    border: 2px;
+    margin-top: 10px;
     text-align: center;
     font-size: 2em;
     text-decoration: underline;
@@ -107,15 +110,52 @@ main h2 {
     background-image: linear-gradient(to left, var(--cor06),transparent );
     border-radius: 10px 0px;
 }
+main > p {
+    text-shadow: 2px 2px 0px black;
+    font-weight: bold;
+    font-size: 2em;
+}
+section#img01 {
+    background-image: url("imagens/cartão\ 2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
 main img {
     width: 70%;
     margin: auto;
     display: block;
 }
 aside {
+    background-color: var(--cor09);
+    min-height: 300px;
+    max-width: 800px;
+}
+main h4 {
     background-color: var(--cor07);
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2em;
+    background-image: linear-gradient(to left, var(--cor06), transparent);
+    border-radius: 10px 0px;
+    margin-bottom: 10px;
+}
+aside > p {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+
+
+}
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    padding-left: 10px;
+    list-style-position: inside;
     columns: 2;
-    height: 400px;
-    width: 800px;
+}
+footer {
+    text-align: center;
+    font-weight: bold;
 }
    
