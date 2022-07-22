@@ -1,79 +1,61 @@
 @charset "UTF8";
 
+@import url('https://fonts.googleapis.com/css2? family= Edu+NSW+ACT+Foundation:wght@400;500;700 & family= Passion+One:wght@400;700; 900 & display=trocar');
+
+@import url('https://fonts.googleapis.com/css2? family= Passion+One:wght@400;700; 900 &família = Quadrado + Peg & display=trocar');
+
 :root {
     --cor06: #8882767c;
     --cor07: #B6BF6F;
     --cor08: #F28B0C;
     --cor09: #64729473;
     --cor10: #F2780C;
-
-    --fonte-padrao: arial,verdana, helvetica,sans-serif;
-    --fonte-destaque: 'Bebas neue'
-
+    --fonte01: 'Edu NSW ACT Foundation', cursive;
+    --fonte02: 'Square Peg', cursive;
 }
-* {
+ * {
     margin:  0px;
     padding: 0px;
 }
 body {
     background-color: var(--cor06);
-    font-family: var(--fonte-padrao);
+
     
 }
 header h1 {
-    background-color: var(--cor07);
-    color: var(--cor10);
-    font-family: var(--fonte-destaque);
+    font-family: var(--fonte02);
+    padding: 30px;
+    color: white;
     font-weight: bold;
-    font-size: medium;   
-    border-radius: 0.3px; 
+    font-size: 3em;   
+    border-radius: 10px 0px; 
 }
 header p {
-    background-color: var(--cor07);
-    color: var(--cor10);
-    font-family: var(--fonte-destaque);
+    color: white;
+    font-family: var(--fonte02);
     font-weight: bold;
-    font-size: medium;
     padding-top: 30px;
-    
-
-}
-header h2 {
-    font-family: var(--fonte-destaque);
-}
-header {background-image: linear-gradient(to left, var(--cor06),transparent );
-    min-height: 150px;
+    font-size: 1.4em;
+     }
+header {
+    background-color: var(--cor07);
+    padding: 50px;
     text-align: center;
     border-radius: 10px 0px;
-    
-    
-}
-header > h1 {
-    font-size: 3em;
-    font-weight: normal;
-    text-shadow: 2px 2px 0px black;
-    text-align: center;
-    padding-bottom: -15px;
-    
-    
-}
-header p {
-    background-color: var(--cor07);
-    padding-bottom: 20px;
-    font-size: 2em;
-    font-weight: normal;
-    text-decoration: underline;
-}
+    background-image: linear-gradient(to right, rgb(0, 0, 0), transparent);
+    }
+
+
 nav {
-    background-color: var(--cor07);
+    color: white;
+    font-family: var(--fonte02);
     padding-top: 20p;
     padding-bottom: 20px;
-    box-shadow: 2px 2px 0px black;
     text-align: left;
     border-radius: 10px 0px;
 }
 nav > a {
-    color: var(--cor09);
+    color: white;
     padding-bottom: 20px;
     text-decoration: none;
     padding: 10px;
@@ -91,32 +73,34 @@ main {
     padding-right: 10px;
 }
 main h1 {
+    color: white;
     background-color: var(--cor07);
-    font-family: var(--fonte-padrao);
+    background-image: linear-gradient(to right, rgb(0, 0, 0), transparent);
+    font-family: var(--fonte01);
     padding-top: 20px;
     border: 2px;
     margin-top: 10px;
     text-align: center;
     font-size: 2em;
-    text-decoration: underline;
-    background-image: linear-gradient(to left, var(--cor06),transparent );
     border-radius: 10px 0px;
 }
 main h2 {
+    color: white;
     background-color: var(--cor07);
     text-align: center;
     font-size: 2em;
-    text-decoration: underline;
-    background-image: linear-gradient(to left, var(--cor06),transparent );
+    background-image: linear-gradient(to right, rgb(0, 0, 0), transparent);
     border-radius: 10px 0px;
 }
-main > p {
-    text-shadow: 2px 2px 0px black;
+article  p {
+    font-family: var(--fonte02);
+    padding: 3px;
+    
+    font-size: 1.3em;
     font-weight: bold;
-    font-size: 2em;
 }
 section#img01 {
-    background-image: url("imagens/cartão\ 2.jpg");
+    background-image: url("imagens/20180805_141006.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
@@ -127,32 +111,42 @@ main img {
     display: block;
 }
 aside {
-    background-color: var(--cor09);
+    
     min-height: 300px;
     max-width: 800px;
 }
-main h4 {
-    background-color: var(--cor07);
-    font-family: var(--fonte-destaque);
-    text-align: center;
-    text-decoration: underline;
-    font-size: 2em;
-    background-image: linear-gradient(to left, var(--cor06), transparent);
-    border-radius: 10px 0px;
-    margin-bottom: 10px;
-}
 aside > p {
-    padding: 10px;
+    color: white;
+    background-color: var(--cor07);
+    background-image: linear-gradient(to right, rgb(0, 0, 0), transparent);
+    padding: 20px;
     text-align: center;
     font-weight: bold;
 
 
 }
+a {
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
 aside > ul {
-    list-style-type: '\2714\00A0\00A0';
+    background-color: var(--cor07);
+    list-style-type:'\2714\00A0\00A0'; 
     padding-left: 10px;
     list-style-position: inside;
     columns: 2;
+}
+table {
+    width: 400px;
+    border-collapse: collapse;
+    text-align: center;
+    border: 2px solid black;
+}
+td {
+    border: 1px solid black;
 }
 footer {
     text-align: center;
