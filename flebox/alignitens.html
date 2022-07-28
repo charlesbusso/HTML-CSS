@@ -24,14 +24,109 @@
         flex: 1;
     }
     .center {
-        text-align: center;
+        align-items: center;
     }
+    .stretch {
+        align-items: stretch;
+    }
+    .start {
+        align-items: flex-start;
+    }
+    .end {
+        align-items: flex-end;
+    }
+    .baseline{
+        align-items: baseline;
+    }
+    .column{
+        flex-direction: column;
+    }
+    .central{
+        height: 300px;
+        justify-content: center;
+    }
+       
+    .central .item {
+        flex: 0%;
+        padding: 20px;
+    }
+    
 </style>
 <body>
+    <p>center</p>
     <section class="container center flex">
         <div class="item">1</div>
         <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis pariatur cum quam maxime qui cumque doloribus, maiores ut, deserunt repudiandae repellendus suscipit, sunt inventore ab possimus perferendis vel omnis numquam.</div>
         <div class="item">item 3</div>
+
+    </section>
+    <p>stretch</p>
+
+    <section class="container stretch">
+        <div class="item">1</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis pariatur cum quam maxime qui cumque doloribus, maiores ut, deserunt repudiandae repellendus suscipit, sunt inventore ab possimus perferendis vel omnis numquam.</div>
+        <div class="item">item 3</div>
+
+    </section>
+    <section class="container start">
+        <div class="item">1</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis pariatur cum quam maxime qui cumque doloribus, maiores ut, deserunt repudiandae repellendus suscipit, sunt inventore ab possimus perferendis vel omnis numquam.</div>
+        <div class="item">item 3</div>
+
+    </section>
+    <p>flex-end</p>
+    <section class="container end">
+        <div class="item">1</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis pariatur cum quam maxime qui cumque doloribus, maiores ut, deserunt repudiandae repellendus suscipit, sunt inventore ab possimus perferendis vel omnis numquam.</div>
+        <div class="item">item 3</div>
+
+    </section>
+    <p>baseline</p>
+    <section class="container baseline">
+        <div class="item"><br> 1</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis pariatur cum quam maxime qui cumque doloribus, maiores ut, deserunt repudiandae repellendus suscipit, sunt inventore ab possimus perferendis vel omnis numquam.</div>
+        <div class="item">item 3</div>
+
+    </section>
+    <p>center column</p>
+    <section class="container center flex column">
+        <div class="item">1</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis pariatur cum quam maxime qui cumque doloribus, maiores ut, deserunt repudiandae repellendus suscipit, sunt inventore ab possimus perferendis vel omnis numquam.</div>
+        <div class="item">item 3</div>
+
+    </section>
+    <p>stretch column</p>
+
+    <section class="container stretch column">
+        <div class="item">1</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis pariatur cum quam maxime qui cumque doloribus, maiores ut, deserunt repudiandae repellendus suscipit, sunt inventore ab possimus perferendis vel omnis numquam.</div>
+        <div class="item">item 3</div>
+
+    </section>
+    <p>start column</p>
+    <section class="container start column">
+        <div class="item">1</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis pariatur cum quam maxime qui cumque doloribus, maiores ut, deserunt repudiandae repellendus suscipit, sunt inventore ab possimus perferendis vel omnis numquam.</div>
+        <div class="item">item 3</div>
+
+    </section>
+    <p>flex-end column</p>
+    <section class="container end column">
+        <div class="item">1</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis pariatur cum quam maxime qui cumque doloribus, maiores ut, deserunt repudiandae repellendus suscipit, sunt inventore ab possimus perferendis vel omnis numquam.</div>
+        <div class="item">item 3</div>
+
+    </section>
+    <p>baseline column</p>
+    <section class="container baseline column">
+        <div class="item"><br> 1</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis pariatur cum quam maxime qui cumque doloribus, maiores ut, deserunt repudiandae repellendus suscipit, sunt inventore ab possimus perferendis vel omnis numquam.</div>
+        <div class="item">item 3</div>
+
+    </section>
+    <p>alinhamento central</p>
+    <section class="container central center"> 
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt blanditiis unde similique ut sit perspiciatis officia explicabo, delectus alias commodi autem aut quod neque accusantium veniam repudiandae enim necessitatibus tempora.</div>
 
     </section>
 </body>

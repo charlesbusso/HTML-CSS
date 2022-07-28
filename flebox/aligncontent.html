@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align content</title>
+</head>
+<style>
+    .container{
+        height: 700px;
+        max-width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px solid black;
+    }
+    .item{
+        background-color: orange;
+        padding: 0px 5px;
+        flex: 1;
+        text-align: center;
+        color: white;
+        margin: 5px;
+        border: 2px solid black;
+    }
+    .center{
+        align-content: center;
+    }
+    .flex-start {
+        align-content: flex-start;
+    }
+    .flex-end{
+        align-content: flex-end;
+    }
+    .space-around{
+        align-content: space-around;
+    }
+    
+</style>
+<body>
+    <p>stretch</p>
+    <div class="container stretch">
+<div class="item">i iuqheriughqieurghiuq hrugqh uerhg rghoi eh</div>
+<div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis a doloribus l </div>
+<div class="item">jhgq uerhiguqher9ghoinhgqheroinefin´qr9g03u4g</div>
+<div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi est dolore esse cum odio aliquam quam ut laboriosam repellat aperiam. Similique culpa laborum laudantium amet beatae sunt esse nemo voluptates?</div>
+<div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aliquam corrupti dolorem, numquam labore consequatur maxime similique quaerat autem quasi in soluta totam aliquid minus enim ipsum quas quidem veniam.</div>
+<div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique fugit est, odio officiis eveniet quod unde eaque nesciunt reprehenderit maxime optio quasi provident? Voluptate quisquam beatae quo atque tempora explicabo!</div>
+<div class="item"></div>
+
+    </div>
+    <div class="container stretch">
+        <div class="item">i iuqheriughqieurghiuq hrugqh uerhg rghoi eh</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis a doloribus l </div>
+        <div class="item">jhgq uerhiguqher9ghoinhgqheroinefin´qr9g03u4g</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi est dolore esse cum odio aliquam quam ut laboriosam repellat aperiam. Similique culpa laborum laudantium amet beatae sunt esse nemo voluptates?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aliquam corrupti dolorem, numquam labore consequatur maxime similique quaerat autem quasi in soluta totam aliquid minus enim ipsum quas quidem veniam.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique fugit est, odio officiis eveniet quod unde eaque nesciunt reprehenderit maxime optio quasi provident? Voluptate quisquam beatae quo atque tempora explicabo!</div>
+        <div class="item"></div>
+        
+            </div>
+    <p>flex start</p>
+    <div class="container start">
+        <div class="item">i iuqheriughqieurghiuq hrugqh uerhg rghoi eh</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis a doloribus l </div>
+        <div class="item">jhgq uerhiguqher9ghoinhgqheroinefin´qr9g03u4g</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi est dolore esse cum odio aliquam quam ut laboriosam repellat aperiam. Similique culpa laborum laudantium amet beatae sunt esse nemo voluptates?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aliquam corrupti dolorem, numquam labore consequatur maxime similique quaerat autem quasi in soluta totam aliquid minus enim ipsum quas quidem veniam.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique fugit est, odio officiis eveniet quod unde eaque nesciunt reprehenderit maxime optio quasi provident? Voluptate quisquam beatae quo atque tempora explicabo!</div>
+        <div class="item"></div>
+        
+            </div>
+            <p>flex flex-end</p>
+        <div class="container end">
+        <div class="item">i iuqheriughqieurghiuq hrugqh uerhg rghoi eh</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis a doloribus l </div>
+        <div class="item">jhgq uerhiguqher9ghoinhgqheroinefin´qr9g03u4g</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi est dolore esse cum odio aliquam quam ut laboriosam repellat aperiam. Similique culpa laborum laudantium amet beatae sunt esse nemo voluptates?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aliquam corrupti dolorem, numquam labore consequatur maxime similique quaerat autem quasi in soluta totam aliquid minus enim ipsum quas quidem veniam.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique fugit est, odio officiis eveniet quod unde eaque nesciunt reprehenderit maxime optio quasi provident? Voluptate quisquam beatae quo atque tempora explicabo!</div>
+        <div class="item"></div>
+        
+            </div>
+            <p>space around</p>
+            <div class="container space-around">
+                <div class="item">i iuqheriughqieurghiuq hrugqh uerhg rghoi eh</div>
+                <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis a doloribus l </div>
+                <div class="item">jhgq uerhiguqher9ghoinhgqheroinefin´qr9g03u4g</div>
+                <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi est dolore esse cum odio aliquam quam ut laboriosam repellat aperiam. Similique culpa laborum laudantium amet beatae sunt esse nemo voluptates?</div>
+                <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aliquam corrupti dolorem, numquam labore consequatur maxime similique quaerat autem quasi in soluta totam aliquid minus enim ipsum quas quidem veniam.</div>
+                <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique fugit est, odio officiis eveniet quod unde eaque nesciunt reprehenderit maxime optio quasi provident? Voluptate quisquam beatae quo atque tempora explicabo!</div>
+                <div class="item"></div>
+                
+                    </div>
+                    <p>space betwenn</p>
+            <div class="container space-betwenn">
+                <div class="item">i iuqheriughqieurghiuq hrugqh uerhg rghoi eh</div>
+                <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis a doloribus l </div>
+                <div class="item">jhgq uerhiguqher9ghoinhgqheroinefin´qr9g03u4g</div>
+                <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi est dolore esse cum odio aliquam quam ut laboriosam repellat aperiam. Similique culpa laborum laudantium amet beatae sunt esse nemo voluptates?</div>
+                <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aliquam corrupti dolorem, numquam labore consequatur maxime similique quaerat autem quasi in soluta totam aliquid minus enim ipsum quas quidem veniam.</div>
+                <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique fugit est, odio officiis eveniet quod unde eaque nesciunt reprehenderit maxime optio quasi provident? Voluptate quisquam beatae quo atque tempora explicabo!</div>
+                <div class="item"></div>
+                
+                    </div>
+    
+</body>
+</html>
