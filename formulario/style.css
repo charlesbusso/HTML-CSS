@@ -8,6 +8,12 @@
 body{
     width: 100%;
     min-height: 100Vh;
-    background: ;
+    background: linear-gradient(90deg, #00bdde 0%, #fc00ff 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    
 }
  
