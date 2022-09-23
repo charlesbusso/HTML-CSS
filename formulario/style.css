@@ -41,8 +41,9 @@ body{
     border: 2px solid #f0f0f0;
     display: block;
     border-radius: 10px;
-    font-size: 100%;
+    font-size: 14px;
     width: 100%;
+    padding: 10px;
 }
  .form-control i{
     position: absolute;
@@ -64,4 +65,23 @@ body{
     width: 100%;
     border-radius: 10px;
     padding: 10px;
+ }
+ /* Error and Success8*/
+ .form-control.success input{
+    border-color: #2ecc71;
+ }
+ .form-control.error input{
+    border-color: #e74c3c;
+ }
+ .form-control.success i.icofont-check-circled{
+    color: green;
+    visibility: visible;
+ }
+ .form-control.error i.icofont-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+ }
+ .form-control.error small{
+    color: #e74c3c;
+    visibility: visible;
  }
