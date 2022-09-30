@@ -1,7 +1,7 @@
 const form = document.getElementById('form');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
-const password = document.getElementById('password')
+const password = document.getElementById('password');
 const passwordConfirmation = document.getElementById('password-confirmation');
 
 form.addEventListener("submit", (e) => {
@@ -45,15 +45,13 @@ function checkInputs() {
         } else {
             setSuccessFor(passwordConfirmation);
     }
-    const formControls = form.querySelectorAll('.form-conrol')
+    const formControls = form.querySelectorAll('.form-control')
 
     const formIsvalid = [...formControls].every((formControl) => {
         return (formControl.className === "form-control success");
     });
 
 }
-
-
 
 
 function setErrorFor(input, message) {
