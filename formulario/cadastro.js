@@ -48,9 +48,9 @@ else  {
             }else {
                 setSuccessFor(passwordConfirmation);
             }
-            const formControls = form.querySelectorAll(".form-control");
+            const formControls = form.querySelectorAll('.form-control')
              const formIsvalid = [...formControls].every((formControl) => {
-                return (formControl.className = "form-control success");
+                return (formControl.className === "form-control success");
              });
              if (formIsvalid) {
                 "O formulário está válido";
@@ -67,8 +67,9 @@ function setErrorFor(input,message) {
     formControl.className = "form-control error";
 }
 
-function setSuccessFor(input,message){
+function setSuccessFor(input){
     const formControl = input.parentElement;
+    formControl.className = "form-control success";
 }
 function checkEmail(email) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(

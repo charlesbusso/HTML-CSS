@@ -50,10 +50,10 @@ body{
     position: absolute;
     top: 20px;
     right: 10px;
-    overflow: hidden;
+    visibility: hidden;
 }
 .form-control small{
-    overflow: hidden;
+    visibility: hidden;
     position: absolute;
     bottom: 0px;
     left: 0px;
