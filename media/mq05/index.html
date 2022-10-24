@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medias Query</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="icofont.min.css">
 </head>
 <body>
     <header>
 
 
 <h1>Meu Site</h1>
-<menu>
+<i id="burger" class="icofont-navigation-menu" onclick="clicMenu()"></i>
+<menu id="itens"> 
     <ul>
        <li><a href="#">Home</a></li>
         <li><a href="#">Saiba Mais</a></li>
@@ -35,6 +36,16 @@
     </article>
 
 </main>
+
+<script>
+    function clicMenu(){
+        if (itens.style.display == 'block'){ 
+            itens.style.display = 'none'
+}  else{
+    itens.style.display = 'block'
+     }
+  }
+</script>
     
 </body>
 </html>
